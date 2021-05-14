@@ -8,14 +8,62 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: #333333">      
       <a-box id="myBox"
-        width="3"
+        width="2"
         height="2"
-        depth="1"
-        color="#BBAA33" 
+        depth="2"
+        color="#c603fc"
+        position="0 2 -10"
+        rotation="0 2 -10" 
         shadow>
       </a-box>
+      <a-circle id="myCircle"
+        width="5"
+        height="2"
+        depth="7"
+        color="blue"
+        position="10 2 -10"
+        rotation="0 2 -10" 
+        shadow>        
+      </a-circle>
+      <a-cone id="myCone"
+        width="5"
+        height="2"
+        depth="7"
+        color="#c603fc"
+        position="0 2 -10"
+        rotation="0 2 -10" 
+        shadow>       
+      </a-cone>
+      <a-cylinder id="myCylinder"
+        width="5"
+        height="2"
+        depth="7"
+        color="#c603fc"
+        position="0 2 -10"
+        rotation="0 2 -10" 
+        shadow> 
+      </a-cylinder>
+      <a-dodecahedron id="myDodecahedron"
+        width="5"
+        height="2"
+        depth="7"
+        color="#c603fc"
+        position="0 2 -10"
+        rotation="0 2 -10" 
+        shadow> 
+      </a-dodecahedron>
+      <a-octahedron id="myOctahedron"
+        width="5"
+        height="2"
+        depth="7"
+        color="#c603fc"
+        position="0 2 -10"
+        rotation="0 2 -10" 
+        shadow> 
+      </a-octahedron>
+      <a-plane id="myPlane" position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="red" shadow></a-plane>
     </a-scene>
   </body>
 </html>
