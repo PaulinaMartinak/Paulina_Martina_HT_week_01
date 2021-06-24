@@ -15,6 +15,7 @@
           <img id="grass" src="images/grass.jpg" />
           <img id="light" src="images/light.jpg" />
           <img id="moon" src="images/moon.jpg" />
+        
       </a-assets>
 
       <a-camera>
@@ -29,12 +30,25 @@
         </a-ring>
       </a-camera>
 
-      <a-octahedron id="myOctahedron"
-        width="5"
+<
+      <a-octahedron id="myOctahedron1"
+        width="1,5"
         height="2"
         depth="7"
         color="pink"
         position="1 8 -10"
+        rotation="0 2 -10"
+        src="#light"
+        shadow 
+      > 
+      </a-octahedron>
+
+      <a-octahedron id="myOctahedron2"
+        width="1,5"
+        height="3"
+        depth="7"
+        color="pink"
+        position="3 5 -5"
         rotation="0 2 -10"
         src="#light"
         shadow 
@@ -81,6 +95,7 @@
         src="#wood2"
         shadow>  
       </a-box>
+      <a-asset-item id="alien" src="models/alien.obj"></a-asset-item>
       <a-plane id="ground"
         position="0 0 -4" 
         rotation="-90 0 0" 
