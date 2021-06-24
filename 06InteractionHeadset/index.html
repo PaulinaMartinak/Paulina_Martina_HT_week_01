@@ -13,6 +13,8 @@
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
+          <img id="light" src="images/light.jpg" />
+          <img id="moon" src="images/moon.jpg" />
       </a-assets>
 
       <a-camera>
@@ -34,27 +36,16 @@
         color="pink"
         position="1 8 -10"
         rotation="0 2 -10"
-        src="#wood"
+        src="#light"
         shadow 
-        animation__mouseenter="
-          property: components.material.material.color; 
-          type: color; 
-          to: blue; 
-          startEvents: mouseenter; 
-          dur: 500;"
-        animation__mouseleave="
-          property: components.material.material.color; 
-          type: color; 
-          to: red; 
-          startEvents: mouseleave; 
-          dur: 500;"> 
+      > 
       </a-octahedron>
 
       <a-sphere id="mySphere"
         width="5"
         height="2"
         depth="7"
-        color="white"
+        src="#moon"
         position="10 8 -10"
         rotation="0 2 -5" 
         shadow >        
