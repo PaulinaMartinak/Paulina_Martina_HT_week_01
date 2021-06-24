@@ -8,7 +8,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: black">
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
@@ -26,6 +26,39 @@
           material="color:#897bdb; shader: flat">
         </a-ring>
       </a-camera>
+
+      <a-octahedron id="myOctahedron"
+        width="5"
+        height="2"
+        depth="7"
+        color="pink"
+        position="1 8 -10"
+        rotation="0 2 -10"
+        src="#wood"
+        shadow 
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: blue; 
+          startEvents: mouseenter; 
+          dur: 500;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: red; 
+          startEvents: mouseleave; 
+          dur: 500;"> 
+      </a-octahedron>
+
+      <a-sphere id="mySphere"
+        width="5"
+        height="2"
+        depth="7"
+        color="white"
+        position="10 8 -10"
+        rotation="0 2 -5" 
+        shadow >        
+      </a-sphere>
       
       <a-box id="myBox" 
         position="-1 1 -3" 
