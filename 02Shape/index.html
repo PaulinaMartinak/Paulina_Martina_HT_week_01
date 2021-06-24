@@ -8,52 +8,62 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">      
+    <a-scene background="color: lightblue">      
       <a-box id="myBox"
-        width="2"
+        width="7"
         height="2"
         depth="2"
-        color="#c603fc"
-        position="0 2 -10"
-        rotation="0 2 -10" 
+        color="brown"
+        position="0 0 -10"
+        rotation="0 0 0" 
         shadow >
       </a-box>
-      <a-circle id="myCircle"
+      <a-sphere id="mySphere"
         width="5"
         height="2"
         depth="7"
-        color="blue"
-        position="10 2 -10"
-        rotation="0 2 -10" 
+        color="orange"
+        position="10 8 -10"
+        rotation="0 2 -5" 
         shadow >        
-      </a-circle>
+      </a-sphere>
       <a-cone id="myCone"
         width="5"
-        height="2"
+        height="12"
         depth="7"
         color="green"
         position="0 2 -10"
         rotation="0 2 -10" 
         shadow>       
       </a-cone>
-      <a-cylinder id="myCylinder"
+
+      <a-cone id="myCone"
         width="5"
-        height="2"
+        height="10"
         depth="7"
-        color="white"
-        position="0 2 -10"
+        color="green"
+        position="1 2 -10"
         rotation="0 2 -10" 
-        shadow > 
-      </a-cylinder>
+        shadow>       
+      </a-cone>
       <a-octahedron id="myOctahedron"
         width="5"
         height="2"
         depth="7"
-        color="#c603fc"
-        position="0 2 -10"
+        color="pink"
+        position="1 8 -10"
         rotation="0 2 -10"> 
       </a-octahedron>
-      <a-plane id="myPlane" position="0 0 -2" rotation="-90 0 0" width="40" height="40" color="red" ></a-plane>
+
+      <a-octahedron id="myOctahedron"
+        width="5"
+        height="2"
+        depth="7"
+        color="pink"
+        position="2 7 -10"
+        rotation="0 2 -10"> 
+      </a-octahedron>
+      <a-plane id="myPlane" position="0 0 -2" rotation="-90 0 0" width="40" height="40" color="green" ></a-plane>
     </a-scene>
   </body>
 </html>
