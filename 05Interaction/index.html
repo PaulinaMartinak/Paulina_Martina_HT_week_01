@@ -39,7 +39,19 @@
           to: 0 0 0;
           type: color; 
           to: #6ac4c0;
-          loop: false;">  
+          loop: false;"
+        animation__mouseentercolor="
+          startEvents:mouseenter;
+          property: material.color;
+          type:color;
+          to:#eb34d5;
+        "
+        animation__mouseleavecolor="
+          startEvents:mouseleave;
+          property: material.color;
+          type:color;
+          to:#6ac4c0
+        ">
       </a-box>
       <a-box id="myOtherBox" 
         position="2 1 -3" 
