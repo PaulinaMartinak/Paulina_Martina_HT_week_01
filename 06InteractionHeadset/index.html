@@ -17,19 +17,9 @@
           <img id="sky" src="images/sky.jpg" />
           <img id="moon" src="images/moon.jpg" />
           <img id="night" src="night/moon.jpg" />
-          <a-asset-item id="alien" src="models/alien.gltf"></a-asset-item>
-      </a-assets>
-        <a-entity
-          id="alien"
-          gltf-model="#alien"
-          class="cantap"
-          scale="3 3 3"
-          xrextras-hold-drag 
-          xrextras-two-finger-rotate
-          xrextras-pinch-scale
-          shadow>
-        </a-entity>
 
+       
+      </a-assets>
       <a-sky src="images/sky.jpg" rotation="1-20 0"> </a-sky>
 
       <a-camera>
@@ -43,6 +33,17 @@
           material="color:#897bdb; shader: flat">
         </a-ring>
       </a-camera>
+
+  <a-entity
+    id="alien"
+    gltf-model="#alien"
+    class="cantap"
+    scale="3 3 3"
+    xrextras-hold-drag 
+    xrextras-two-finger-rotate
+    xrextras-pinch-scale
+    shadow>
+  </a-entity>
 
       <a-octahedron id="myOctahedron1"
         width="1,5"
