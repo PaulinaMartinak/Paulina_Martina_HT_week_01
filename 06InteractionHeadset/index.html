@@ -45,7 +45,7 @@
     shadow>
   </a-entity>
 
-      <a-octahedron id="myOctahedron1"
+<!--       <a-octahedron id="myOctahedron1"
         width="1,5"
         height="2"
         depth="1"
@@ -68,7 +68,7 @@
           dur: 500;">  
 
       > 
-      </a-octahedron>
+      </a-octahedron> -->
 
       <a-octahedron id="myOtherBox"
         width="1,5"
@@ -97,17 +97,13 @@
       > 
       </a-octahedron>
 
-      <a-sphere id="myOtherBox2"
-        width="5"
+
+
+<a-octahedron id="myOtherBox"
+        width="1,5"
         height="2"
-        depth="7"
-        src="#moon"
-        position="10 8 -10"
-        rotation="0 2 -5" 
-        shadow >        
-      </a-sphere>
-      
-      <a-box id="myBox" 
+        depth="1"
+        color="blue"
         position="-1 1 -3" 
         rotation="0 45 0" 
         width="3" 
@@ -127,7 +123,20 @@
           to: red; 
           startEvents: mouseleave; 
           dur: 500;">  
-      </a-box>
+      > 
+      </a-octahedron>
+
+      <a-sphere id="moon"
+        width="5"
+        height="2"
+        depth="7"
+        src="#moon"
+        position="10 8 -10"
+        rotation="0 2 -5" 
+        shadow >        
+      </a-sphere>
+      
+     
      
       
       <a-plane id="ground"
