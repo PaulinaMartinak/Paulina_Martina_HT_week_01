@@ -20,7 +20,7 @@
 
       <a-box id="myBox" 
         position="-1 1 -3" 
-        rotation="0 45 0" 
+        rotation="0 0 0" 
         width="3" 
         height="1" 
         depth="1" 
@@ -29,13 +29,15 @@
         animation__mouseenter="
           property: rotation; 
           startEvents: mouseenter; 
-          rotation: 180 0 0;
-          loop: true;"
+          to: 360 0 0;
+          loop: true;
+          dur: 10000;"
         animation__mouseleave="
           property: rotation;  
           startEvents: mouseleave;
-          rotation: 0 0 0;
-          loop: false;">  
+          to: 360 0 0;
+          loop: false;
+          dur: 10000">  
       </a-box>
       <a-box id="myOtherBox" 
         position="2 1 -3" 
