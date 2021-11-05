@@ -15,6 +15,37 @@
           <img id="grass" src="images/grass.jpg" />
           <img id="bubbles" src="images/bubbles.jpg" />
       </a-assets>
+          <a-torus-knot position="4 4 -8" color="#408080">position="-1 1 -3" 
+        rotation="0 0 0" 
+        width="3" 
+        height="1" 
+        depth="1" 
+        material="src: #bubbles"
+        shadow 
+        animation__mouseenter="
+          property: rotation; 
+          startEvents: mouseenter; 
+          to: 360 0 0;
+          loop: true;"
+        animation__mouseleave="
+          property: rotation;  
+          startEvents: mouseleave;
+          to: 0 0 0;
+          loop: false;"
+        animation__mouseentercolor="
+          property: material.color;
+          startEvents:mouseenter;
+          property: material.color;
+          type:color;
+          to:#eb34d5;
+        "
+        animation__mouseleavecolor="
+          property: material.color;
+          startEvents:mouseleave;
+          property: material.color;
+          type:color;
+          to:#6ac4c0
+        "></a-torus-knot>
 
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
